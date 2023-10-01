@@ -1,0 +1,249 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5qjnycstn0ib"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_76yvi"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_76yvi")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+visible = false
+offset_right = 1038.0
+offset_bottom = 628.0
+text = "<style>
+  
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+  
+@font-face {
+  font-family: Adventure;
+  src: url(\"https://www.dl.dropboxusercontent.com/s/y4xlt7c2yc9hjgu/Adventure.ttf?dl=0\");
+}
+  
+@font-face {
+  font-family: CaviarDreams;
+  src: url(\"https://www.dl.dropboxusercontent.com/s/x3ho5k2vm4sb3h2/CaviarDreams.ttf?dl=0\");
+}
+
+@font-face {
+  font-family: ArtBrewery;
+  src: url(\"https://www.dl.dropboxusercontent.com/s/onffaicx2tqji74/Art%20Brewery.ttf?dl=0\");
+}
+
+@font-face {
+  font-family: EthnocentricRG;
+  src: url(\"https://www.dl.dropboxusercontent.com/s/n04snjck0isluxt/ethnocentric%20rg.otf?dl=0\")
+}
+
+@font-face {
+  font-family: Glitch;
+  src: url(\"https://www.dl.dropboxusercontent.com/s/q1h4fdacsxoze64/Those%20Glitch%20Regular.otf?dl=0\")
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+
+  background-color: #292929;
+  background-repeat: no-repeat;
+  background-image: url(\"https://cdn.discordapp.com/attachments/836342764496617533/995173911849349160/big_gun_transparent.png\");
+  background-position: left;
+  background-size: auto 1000px;
+
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+ 
+.quote {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+
+  border-radius: 26.5px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+}
+  
+.quote2 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  
+  width: 100%;
+  height: 101%;
+
+  clip-path: polygon(100% 0, 100% 100%, 28% 100%, 41% 0);
+  background-color: #000000;
+  animation-name: slidein;
+  animation-duration: 1.8s;
+}
+  
+.quote21 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 2;
+  
+  width: 100%;
+  height: 101%;
+
+  clip-path: polygon(100% 0, 100% 100%, 30% 100%, 43% 0);
+  background-color: #fc6b03;
+  animation-name: slidein;
+  animation-duration: 2.9s;
+}
+  
+.quote3 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 3;
+  
+  width: 100%;
+  height: 101%;
+
+  clip-path: polygon(100% 0, 100% 100%, 32% 100%, 45% 0);
+  background-color:#302a25;
+  
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+  
+.text-container {
+  color: white;
+  position: relative;
+  padding-left: 50%;
+  padding-right: 10%;
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 3s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  }
+  
+.headertext{
+    font-family: ArtBrewery;
+    font-size: 65px;
+    color:#c9240e;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+  }
+ 
+.subtext{
+       font-family: EthnocentricRG;
+    font-size: 20px;
+    color: #de3737;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+  }
+  
+.subtext2{
+       font-family: EthnocentricRG;
+    font-size: 20px;
+    color: #de3737;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+  }
+  
+.maintext{
+       font-family: CaviarDreams;
+    font-size: 15px;
+    color:#dbd3d3;
+    text-align: center;
+  }
+  
+hr.divider {
+  border: 1px solid #1A0400;
+}
+  
+.image-slidein{
+  animation-name: fadein;
+  animation-duration: 2s;
+  position: relative;
+  }
+  
+</style>
+<body>
+<div class=\"background\">
+<div class=\"quote\"></div>
+<div class=\"quote2\"></div>
+<div class=\"quote21\"></div>
+<div class=\"quote3\"><div class=\"text-container\"><div class=\"headertext\">
+  <div class=\"glitch\">Honor</div>
+</div>
+<hr class=\"divider\">
+<div class=\"subtext\">
+Pullin' shots, aimin' dots, yeah I don't miss,
+Branded by fire, born in the abyss, yeah,
+I just can't resist all this vengeance inside me!
+</div>
+<hr>
+<div class=\"subtext2\">
+Provost-Marshal of Lett'Mora,<br>
+Wealdwalker Lieutenant,<br>
+Expert Marksman,<br>
+</div>
+<hr>
+<hr class=\"divider\">
+<div class=\"maintext\">
+An emaciated figure bearing an oversized weapon.
+
+A sense of weariness about the world surrounds them; an unseen burden.<br>
+
+Their form has been battered significantly. Someone pushed to the very limit of their ability for far, far too long, exerted beyond any reasonable measure and driven effectively to the breaking point.<br><br>
+
+Much too far, for much too long. Scars mark their limbs - crudely healed, cauterized, or otherwise a mark of imperfect care.<br><br>
+
+The weapon they bear is a strange sight for sure - it is too large to be rightfully called a rifle. It's more like a cannon, in size and power. Far too crude and large to be any kind of precision weapon, it towers above them easily by three feet - how do they wield such a thing?<br><br>
+
+Surrounded by an aura of sorcerous power at all times, the person before you seems relatively demure, physically. They're no titan of muscle or bulwark of physical prowess, but the raw magical potential is obvious to anyone with any idea of how magic works. <br><br>
+
+A green cape about their shoulders denotes them as one of Fort Urosil's wealdwalkers.
+
+</div>
+<hr>
+<div class=\"subtext\">
+I'm a bomb you can't defuse,
+I'd just accept you're gonna loose-
+Can't turn down, I refuse to hold back anymore!
+</div>
+</div>
+</div>"
+
+[node name="ColorRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
